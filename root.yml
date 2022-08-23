@@ -6,7 +6,7 @@ spec:
   destination:
     namespace: tooling
     server: https://kubernetes.default.svc
-  project: default
+  project: tooling
   source:
     path: helm
     repoURL: https://github.com/ebdekock/argo.git
