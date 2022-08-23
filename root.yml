@@ -3,13 +3,11 @@ kind: Application
 metadata:
   name: tooling
   namespace: tooling
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: default
+    namespace: tooling
     name: tooling
-    server: https://kubernetes.default.svc
+    server: in-cluster
   project: default
   source:
     path: helm
