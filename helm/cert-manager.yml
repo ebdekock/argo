@@ -14,7 +14,7 @@ spec:
         - name: installCRDs
           value: "true"
   destination:
-    server: "https://kubernetes.default.svc"
+    server: https://kubernetes.default.svc
     namespace: tooling
   syncPolicy:
     automated: {}
