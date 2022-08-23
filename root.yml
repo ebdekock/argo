@@ -2,10 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: tooling
-  namespace: tooling
 spec:
   destination:
-    namespace: tooling
+    namespace: default
     server: https://kubernetes.default.svc
   project: tooling
   source:
