@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: cert-manager
-  namespace: tooling
 spec:
   project: default
   source:
@@ -16,7 +15,7 @@ spec:
           value: "true"
   destination:
     server: https://kubernetes.default.svc
-    namespace: tooling
+    namespace: default
   syncPolicy:
     automated: {}
     syncOptions:
