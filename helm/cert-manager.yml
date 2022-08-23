@@ -15,7 +15,7 @@ spec:
           value: "true"
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: tooling
   syncPolicy:
     automated: {}
     syncOptions:

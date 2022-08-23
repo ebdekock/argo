@@ -4,7 +4,7 @@ metadata:
   name: tooling
 spec:
   destination:
-    namespace: default
+    namespace: tooling
     server: https://kubernetes.default.svc
   project: default
   source:
