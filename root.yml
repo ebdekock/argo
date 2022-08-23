@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: tooling
+  namespace: tooling
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: default
+    name: Tooling
+  project: tooling
+  source:
+    path: helm
+    repoURL: https://github.com/ebdekock/argo
+    targetRevision: HEAD
