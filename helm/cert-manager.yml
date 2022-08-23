@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: cert-manager
 spec:
-  project: tooling
+  project: default
   source:
     chart: cert-manager
     repoURL: https://charts.jetstack.io
