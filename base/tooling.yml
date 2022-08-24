@@ -1,3 +1,4 @@
+# Parent of app of apps
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -8,7 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: tooling
   source:
-    path: helm
     repoURL: https://github.com/ebdekock/argo.git
     targetRevision: HEAD
   syncPolicy:

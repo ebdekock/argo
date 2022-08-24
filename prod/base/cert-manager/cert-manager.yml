@@ -9,7 +9,6 @@ spec:
   source:
     chart: cert-manager
     repoURL: https://charts.jetstack.io
-    targetRevision: v1.9.1
     helm:
       releaseName: cert-manager
       parameters:
