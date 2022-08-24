@@ -6,8 +6,5 @@ spec:
   source:
     targetRevision: v1.9.1
     helm:
-      parameters:
-        - name: replicaCount
-          value: "2"
-        - name: installCRDs
-          value: "true"
+      valueFiles:
+        - cert-manager-values.yml
